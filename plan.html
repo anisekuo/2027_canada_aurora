@@ -7,239 +7,161 @@
 <title>一家人的北美冬季之旅｜2027</title>
 <style>
 :root{--bg:#f7f6f2;--ink:#243631;--green:#285c52;--muted:#78817b;--line:#e5e5dc;--card:#fff;--pale:#e9eee8}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;line-height:1.7}
-a{color:var(--green);text-underline-offset:3px}
-button,input{font:inherit}
-button{cursor:pointer}
-.container{width:min(1120px,92%);margin:auto}
-header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
-.brand{font-weight:800;font-size:19px}
-.eyebrow{font-size:11px;letter-spacing:2px;color:var(--muted)}
+a{color:var(--green);text-underline-offset:3px}button,input{font:inherit}button{cursor:pointer}
+.container{width:min(1120px,92%);margin:auto}header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.brand{font-weight:800;font-size:19px}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--muted)}
 .btn{display:inline-block;background:var(--green);color:white;text-decoration:none;padding:10px 15px;border-radius:9px;border:0;font-size:14px}
 .hero{min-height:420px;border-radius:24px;padding:32px;display:flex;flex-direction:column;justify-content:end;color:white;background:linear-gradient(0deg,rgba(9,27,43,.92),rgba(9,27,43,.08)),url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1600&q=85') center/cover}
-.hero h1{font-size:clamp(36px,6vw,62px);line-height:1.15;margin:12px 0}
-.hero p{max-width:580px}
-.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-.pill{border:1px solid #d9ddd6;border-radius:40px;padding:5px 12px;font-size:13px;background:transparent;color:inherit}
-.hero .pill{border-color:#ffffff88}
+.hero h1{font-size:clamp(36px,6vw,62px);line-height:1.15;margin:12px 0}.hero p{max-width:650px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.pill{border:1px solid #d9ddd6;border-radius:40px;padding:5px 12px;font-size:13px;background:transparent;color:inherit}.hero .pill{border-color:#ffffff88}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 32px}
-.panel,.stat,.day{background:var(--card);border:1px solid var(--line);border-radius:16px}
-.stat{padding:18px}
-.stat strong{display:block;margin:5px 0}
-.section{margin:32px 0}
-h2{font-size:24px;letter-spacing:-.5px;margin:0 0 16px}
-h3{font-size:18px;margin:0}
-.muted{font-size:13px;color:var(--muted)}
-.layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(280px,.8fr);gap:22px;align-items:start}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-.filters button.active{background:var(--green);color:white;border-color:var(--green)}
-.day{overflow:hidden;margin-bottom:12px}
-.day-head{display:flex;gap:14px;align-items:center;padding:16px;cursor:pointer}
-.day-head:hover{background:#fafbf8}
-.date{background:var(--pale);border-radius:12px;padding:8px;min-width:60px;text-align:center;font-weight:800;line-height:1.4}
-.date small{font-weight:500;font-size:12px}
-.day-title{font-weight:750}
-.day-body{padding:0 18px 18px;border-top:1px solid var(--line)}
-.day-body li{margin:8px 0}
-.day-body ul{padding-left:20px}
-.day-body[hidden]{display:none}
-.panel{padding:18px;margin-bottom:14px}
-.linkrow{padding:12px 0;border-bottom:1px solid var(--line)}
-.linkrow:last-child{border:0}
-.linkrow a{font-size:14px}
+.panel,.stat,.day{background:var(--card);border:1px solid var(--line);border-radius:16px}.stat{padding:18px}.stat strong{display:block;margin:5px 0}
+.section{margin:32px 0}h2{font-size:24px;letter-spacing:-.5px;margin:0 0 16px}h3{font-size:18px;margin:0}
+.muted{font-size:13px;color:var(--muted)}.layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(280px,.8fr);gap:22px;align-items:start}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.filters button.active{background:var(--green);color:white;border-color:var(--green)}
+.day{overflow:hidden;margin-bottom:12px}.day-head{display:flex;gap:14px;align-items:center;padding:16px;cursor:pointer}.day-head:hover{background:#fafbf8}
+.date{background:var(--pale);border-radius:12px;padding:8px;min-width:60px;text-align:center;font-weight:800;line-height:1.4}.date small{font-weight:500;font-size:12px}
+.day-title{font-weight:750}.day-body{padding:0 18px 18px;border-top:1px solid var(--line)}.day-body li{margin:8px 0}.day-body ul{padding-left:20px}.day-body[hidden]{display:none}
+.panel{padding:18px;margin-bottom:14px}.linkrow{padding:12px 0;border-bottom:1px solid var(--line)}.linkrow:last-child{border:0}.linkrow a{font-size:14px}
 .notice{background:#f2f4ee;border-radius:12px;padding:14px;margin:14px 0;font-size:14px}
-.train{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;padding:15px 0}
-.train strong{font-size:22px}
-.timeline{display:grid;grid-template-columns:65px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
-.timeline:last-child{border:0}
-.time{font-size:13px;font-weight:800;color:var(--green)}
-.checkrow{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
-.checkrow input{accent-color:var(--green);margin-top:6px}
-.progress{height:6px;background:#e8eae4;border-radius:9px;overflow:hidden;margin:12px 0}
-.progress div{height:100%;width:0;background:var(--green);transition:width .2s}
-footer{text-align:center;border-top:1px solid var(--line);padding:32px 0;margin-top:35px}
-img{max-width:100%}
+.train{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;padding:15px 0}.train strong{font-size:22px}
+.timeline{display:grid;grid-template-columns:65px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.timeline:last-child{border:0}
+.time{font-size:13px;font-weight:800;color:var(--green)}.checkrow{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.checkrow input{accent-color:var(--green);margin-top:6px}.progress{height:6px;background:#e8eae4;border-radius:9px;overflow:hidden;margin:12px 0}
+.progress div{height:100%;width:0;background:var(--green);transition:width .2s}footer{text-align:center;border-top:1px solid var(--line);padding:32px 0;margin-top:35px}
 @media(max-width:760px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.hero{min-height:350px;padding:23px}.container{width:92%}header{gap:10px}.brand{font-size:16px}.train strong{font-size:18px}}
 @media print{body{background:white}.filters,.btn,.checkrow input{display:none}.layout{display:block}.day-body[hidden]{display:block}.hero{min-height:250px;print-color-adjust:exact}.panel,.day{break-inside:avoid}}
 </style>
 </head>
-<body>
-<div class="container">
-<header>
-<div><div class="eyebrow">OUR FAMILY TRAVEL JOURNAL</div><div class="brand">北美冬日旅行手帳</div></div>
-<a class="btn" href="#itinerary">每日行程 ↓</a>
-</header>
-
-<section class="hero">
-<div class="eyebrow" style="color:#e0e9e6">JAN 29 — FEB 8, 2027</div>
-<h1>一家人的<br>北美冬季之旅</h1>
-<p>西雅圖城市探索、黃刀鎮追極光、溫哥華美食散策，以及西雅圖的農曆新年團聚。</p>
-<div class="pills"><span class="pill">✈️ 跨境旅行</span><span class="pill">🌌 三晚極光</span><span class="pill">🧧 除夕團圓</span></div>
-</section>
-
+<body><div class="container">
+<header><div><div class="eyebrow">OUR FAMILY TRAVEL JOURNAL</div><div class="brand">北美冬日旅行手帳</div></div><a class="btn" href="#itinerary">每日行程 ↓</a></header>
+<section class="hero"><div class="eyebrow" style="color:#e0e9e6">JAN 29 — FEB 8, 2027</div><h1>一家人的<br>北美冬季之旅</h1><p>西雅圖城市探索、黃刀鎮三晚追極光、溫哥華美食散策，以及西雅圖的農曆新年團聚。</p><div class="pills"><span class="pill">✈️ 跨境旅行</span><span class="pill">🌌 三晚極光</span><span class="pill">🧧 除夕團圓</span><span class="pill">🚗 西雅圖自駕</span></div></section>
 <div class="stats">
 <div class="stat"><span>✈️</span><strong>三座城市</strong><div class="muted">西雅圖・黃刀鎮・溫哥華</div></div>
 <div class="stat"><span>🌌</span><strong>極光之旅</strong><div class="muted">黃刀鎮三晚觀測</div></div>
 <div class="stat"><span>🥢</span><strong>美食散策</strong><div class="muted">列治文與溫哥華市區</div></div>
 <div class="stat"><span>🧧</span><strong>家庭團聚</strong><div class="muted">西雅圖過農曆新年</div></div>
 </div>
-
 <div class="layout">
-<main id="itinerary">
-<h2>每日行程 <span class="muted">／ 2027</span></h2>
-<div class="filters">
-<button class="pill active" data-filter="all">全部</button>
-<button class="pill" data-filter="西雅圖">西雅圖</button>
-<button class="pill" data-filter="黃刀鎮">黃刀鎮</button>
-<button class="pill" data-filter="溫哥華">溫哥華</button>
+<main id="itinerary"><h2>每日行程 <span class="muted">／ 2027</span></h2>
+<div class="filters"><button class="pill active" data-filter="all">全部</button><button class="pill" data-filter="西雅圖">西雅圖</button><button class="pill" data-filter="黃刀鎮">黃刀鎮</button><button class="pill" data-filter="溫哥華">溫哥華</button></div>
+
+<article class="day" data-city="西雅圖"><div class="day-head"><div class="date">1/29<br><small>星期五</small></div><div style="flex:1"><div class="day-title">抵達西雅圖</div><div class="muted">國際航班・入境・入住休息</div></div><span>⌄</span></div><div class="day-body"><ul>
+<li>JX032｜20:30 桃園 T2 起飛，15:05 抵達西雅圖 SEA（當地時間）。</li><li>預留約 2 小時辦理入境與領取行李。</li><li>下載 Mobile Passport Control（MPC），出發前確認使用資格及適用情況。</li></ul>
+<strong>住宿：Holiday Inn Express &amp; Suites Seattle-Sea-Tac Airport</strong><p><a href="https://www.ihg.com/holidayinnexpress/" target="_blank" rel="noopener">IHG 官方網站 ↗</a></p></div></article>
+
+<article class="day" data-city="西雅圖"><div class="day-head"><div class="date">1/30<br><small>星期六</small></div><div style="flex:1"><div class="day-title">西雅圖市區深度遊</div><div class="muted">城市地標・市場・咖啡文化</div></div><span>⌄</span></div><div class="day-body"><ul><li>太空針塔 Space Needle。</li><li>奇胡利玻璃藝術園 Chihuly Garden and Glass。</li><li>派克市場 Pike Place Market。</li><li>星巴克烘焙工坊 Starbucks Reserve Roastery。</li></ul><p class="muted">景點順序、門票與市區交通待確認。</p><strong>住宿：Holiday Inn Express &amp; Suites Seattle-Sea-Tac Airport</strong><p><a href="https://www.ihg.com/holidayinnexpress/" target="_blank" rel="noopener">IHG 官方網站 ↗</a></p></div></article>
+
+<article class="day" data-city="黃刀鎮"><div class="day-head"><div class="date">1/31<br><small>星期日</small></div><div style="flex:1"><div class="day-title">飛往黃刀鎮・極光第 1 晚</div><div class="muted">西雅圖 → 溫哥華 → 黃刀鎮</div></div><span>⌄</span></div><div class="day-body"><ul>
+<li>飯店早餐 05:00 開始供應；05:30 出門前往 SEA 機場。</li><li>AC8801｜08:15 SEA → 10:26 YVR。</li><li>溫哥華轉機約 4 小時，行李預計直掛至 YZF，仍請於報到時再次確認。</li><li>轉機空檔可評估前往附近 Outlet；地鐵約 10 分鐘，須預留往返、安檢及登機時間，勿影響轉機。</li><li>AC8024｜14:45 YVR → 18:19 YZF。</li><li>夜間當地包團追極光第 1 晚，約 20:00–22:00 出發，活動約 4–5 小時。</li></ul><p class="muted">航班及極光團接送時間以航空公司、業者最新通知為準。</p><strong>住宿：The Explorer Hotel</strong><p><a href="https://www.explorerhotel.ca/" target="_blank" rel="noopener">飯店官網 ↗</a></p></div></article>
+
+<article class="day" data-city="黃刀鎮"><div class="day-head"><div class="date">2/1<br><small>星期一</small></div><div style="flex:1"><div class="day-title">狗拉雪橇・極光第 2 晚</div><div class="muted">雪地冒險・夜間追光</div></div><span>⌄</span></div><div class="day-body"><ul><li>白天狗拉雪橇，預計 11:00–14:00 出團；實際集合時間依業者通知。</li><li>下午回飯店休息、補充熱量並準備夜間保暖衣物。</li><li>晚上當地包團追極光第 2 晚。</li></ul><strong>住宿：The Explorer Hotel</strong><p><a href="https://www.explorerhotel.ca/" target="_blank" rel="noopener">飯店官網 ↗</a></p></div></article>
+
+<article class="day" data-city="黃刀鎮"><div class="day-head"><div class="date">2/2<br><small>星期二</small></div><div style="flex:1"><div class="day-title">黃刀鎮慢遊・極光第 3 晚</div><div class="muted">小鎮散策・休息・最後一晚追光</div></div><span>⌄</span></div><div class="day-body"><ul><li>白天安排黃刀鎮市區慢遊。</li><li>回飯店休息、整理行李，為隔天清晨航班做準備。</li><li>晚上當地包團追極光第 3 晚。</li></ul><strong>住宿：The Explorer Hotel</strong><p><a href="https://www.explorerhotel.ca/" target="_blank" rel="noopener">飯店官網 ↗</a></p></div></article>
+
+<article class="day" data-city="溫哥華"><div class="day-head"><div class="date">2/3<br><small>星期三</small></div><div style="flex:1"><div class="day-title">溫哥華・列治文美食</div><div class="muted">清晨抵達・寄放行李・亞洲美食</div></div><span>⌄</span></div><div class="day-body"><ul>
+<li>AC253C｜06:05 YZF → 07:58 YVR。</li><li>抵達 YVR 後搭乘 Canada Line 往市區方向，約 15 分鐘抵達 Langara–49th Avenue 站。</li><li>步行前往住處寄放行李；<strong>務必事先向房東確認能否寄放及可寄放時間</strong>。</li><li>安頓後搭 Canada Line 前往列治文 Richmond，安排港式點心、牛雜及海鮮料理。</li><li>下午可逛列治文商場，或提早回住宿休息，調整時差與長途飛行疲勞。</li></ul><div class="notice"><strong>住宿地址</strong><br>6637 Ash Street, Vancouver, BC V6P 3K3<br><span class="muted">Booking.com 訂房；請確認地址、入住方式及行李寄放安排。</span></div><a href="https://www.booking.com/Share-Pz8M1H" target="_blank" rel="noopener">Booking.com 訂房頁 ↗</a></div></article>
+
+<article class="day" data-city="溫哥華"><div class="day-head"><div class="date">2/4<br><small>星期四</small></div><div style="flex:1"><div class="day-title">格蘭佛島・耶魯鎮</div><div class="muted">公眾市場・煤氣鎮・港灣・日式料理</div></div><span>⌄</span></div><div class="day-body"><ul>
+<li><strong>上午｜格蘭佛島 Granville Island：</strong>從住處搭 Canada Line 往北至 Olympic Village 站，再轉乘短途巴士或步行前往。逛室內公眾市場，喝熱湯、品嚐在地小吃與起司。</li>
+<li><strong>下午｜市中心漫步：</strong>搭乘小渡輪回市中心，走訪煤氣鎮 Gastown 蒸汽鐘。</li><li>前往加拿大廣場 Canada Place 欣賞冬季港灣景色。</li><li><strong>晚餐｜耶魯鎮 Yaletown：</strong>尋找炙燒壽司（Aburi Sushi）或精緻日式海鮮料理，餐後利用 Canada Line 返回住宿。</li></ul><strong>住宿：溫哥華</strong><p class="muted">小渡輪班次、餐廳訂位及市場營業時間請出發前確認。</p></div></article>
+
+<!-- 2/5 已更新：Amtrak Cascades 517 -->
+<article class="day" data-city="西雅圖"><div class="day-head"><div class="date">2/5<br><small>星期五</small></div><div style="flex:1"><div class="day-title">火車南下・西雅圖除夕</div><div class="muted">Amtrak Cascades 517・租車・民宿寄放行李・Costco 採買</div></div><span>⌄</span></div><div class="day-body">
+
+<div class="notice">
+<strong>🚆 Amtrak Cascades 517 次｜最新行程</strong>
+<div class="train">
+<div><strong>8:25 AM</strong><br><span class="muted">Vancouver, BC Canada<br>Pacific Central Station (VAC)</span></div>
+<div>→</div>
+<div><strong>11:40 AM</strong><br><span class="muted">Seattle, WA<br>King Street Station (SEA)</span></div>
+</div>
+<div class="muted">2027/2/5（五）。預計車程 4 小時 15 分（依你提供的訂票資訊）；請以最新車票確認實際行車時間、班次及行李規定。計畫至少提前 1.5 小時抵達車站，並辦理行李托運。</div>
 </div>
 
-<article class="day" data-city="西雅圖">
-<div class="day-head"><div class="date">1/29<br><small>星期五</small></div><div style="flex:1"><div class="day-title">抵達西雅圖</div><div class="muted">國際航班・入住休息</div></div><span>⌄</span></div>
-<div class="day-body"><ul>
-<li>JX032｜20:30 桃園 T2 起飛，15:05 抵達西雅圖 SEA（當地時間）。</li>
-<li>預留約兩小時辦理入境與領取行李。</li>
-<li>出發前確認 Mobile Passport Control 的使用資格與適用情況。</li>
-</ul><strong>住宿：Holiday Inn Express &amp; Suites Seattle-Sea-Tac Airport</strong><p><a href="https://www.ihg.com/holidayinnexpress/" target="_blank" rel="noopener">IHG 官方網站 ↗</a></p></div>
-</article>
-
-<article class="day" data-city="西雅圖">
-<div class="day-head"><div class="date">1/30<br><small>星期六</small></div><div style="flex:1"><div class="day-title">西雅圖市區深度遊</div><div class="muted">城市地標・市場・咖啡文化</div></div><span>⌄</span></div>
-<div class="day-body"><ul><li>太空針塔 Space Needle。</li><li>奇胡利玻璃藝術園 Chihuly Garden and Glass。</li><li>派克市場 Pike Place Market。</li><li>星巴克烘焙工坊 Starbucks Reserve Roastery。</li></ul><p class="muted">景點順序、門票與交通待確認。</p><strong>住宿：Holiday Inn Express &amp; Suites Seattle-Sea-Tac Airport</strong><p><a href="https://www.ihg.com/holidayinnexpress/" target="_blank" rel="noopener">IHG 官方網站 ↗</a></p></div>
-</article>
-
-<article class="day" data-city="黃刀鎮">
-<div class="day-head"><div class="date">1/31<br><small>星期日</small></div><div style="flex:1"><div class="day-title">飛往黃刀鎮・極光第 1 晚</div><div class="muted">西雅圖 → 溫哥華 → 黃刀鎮</div></div><span>⌄</span></div>
-<div class="day-body"><ul><li>05:30 出門前往機場。</li><li>AC8801｜08:15 SEA → 10:26 YVR。</li><li>轉機約三小時，優先確認行李直掛與登機時間。</li><li>AC8024｜14:45 YVR → 17:19 YZF。</li><li>夜間參加當地極光觀測團，約 20:00–22:00 出發，活動約四至五小時。</li></ul><p class="muted">請依航空公司及極光團通知確認時間。</p><strong>住宿：The Explorer Hotel</strong><p><a href="https://www.explorerhotel.ca/" target="_blank" rel="noopener">飯店官網 ↗</a></p></div>
-</article>
-
-<article class="day" data-city="黃刀鎮">
-<div class="day-head"><div class="date">2/1<br><small>星期一</small></div><div style="flex:1"><div class="day-title">狗拉雪橇・極光第 2 晚</div><div class="muted">雪地冒險</div></div><span>⌄</span></div>
-<div class="day-body"><ul><li>11:00–14:00 狗拉雪橇活動，實際時間以業者確認為準。</li><li>下午回飯店休息、補充熱量及保暖。</li><li>晚上參加極光觀測團第 2 晚。</li></ul><strong>住宿：The Explorer Hotel</strong><p><a href="https://www.explorerhotel.ca/" target="_blank" rel="noopener">飯店官網 ↗</a></p></div>
-</article>
-
-<article class="day" data-city="黃刀鎮">
-<div class="day-head"><div class="date">2/2<br><small>星期二</small></div><div style="flex:1"><div class="day-title">黃刀鎮慢遊・極光第 3 晚</div><div class="muted">小鎮散策・休息</div></div><span>⌄</span></div>
-<div class="day-body"><ul><li>白天黃刀鎮市區慢遊。</li><li>回飯店休息並整理行李。</li><li>晚上參加極光觀測團第 3 晚。</li></ul><strong>住宿：The Explorer Hotel</strong><p><a href="https://www.explorerhotel.ca/" target="_blank" rel="noopener">飯店官網 ↗</a></p></div>
-</article>
-
-<article class="day" data-city="溫哥華">
-<div class="day-head"><div class="date">2/3<br><small>星期三</small></div><div style="flex:1"><div class="day-title">溫哥華・列治文美食</div><div class="muted">抵達・寄放行李・亞洲美食</div></div><span>⌄</span></div>
-<div class="day-body"><ul><li>黃刀鎮飛抵溫哥華 YVR，航班時間待補。</li><li>搭乘 Canada Line 前往住宿附近寄放行李。</li><li>下午到列治文品嚐港式點心、牛雜或海鮮。</li><li>晚上逛商場或回住宿休息。</li></ul><strong>住宿：Booking.com 分享住宿</strong><p><a href="https://www.booking.com/Share-Pz8M1H" target="_blank" rel="noopener">開啟住宿訂房頁 ↗</a></p><p class="muted">地址、入住時間及距離車站的步行時間請以訂房頁為準。</p></div>
-</article>
-
-<article class="day" data-city="溫哥華">
-<div class="day-head"><div class="date">2/4<br><small>星期四</small></div><div style="flex:1"><div class="day-title">格蘭佛島・市中心漫步</div><div class="muted">公眾市場・海港・日式料理</div></div><span>⌄</span></div>
-<div class="day-body"><ul><li>上午前往格蘭佛島 Granville Island 公眾市場。</li><li>搭乘小渡輪或大眾運輸回市中心。</li><li>造訪煤氣鎮 Gastown 蒸汽鐘。</li><li>加拿大廣場 Canada Place 欣賞港灣景色。</li><li>晚餐安排耶魯鎮 Yaletown，考慮炙燒壽司。</li></ul><strong>住宿：Booking.com 分享住宿</strong><p><a href="https://www.booking.com/Share-Pz8M1H" target="_blank" rel="noopener">開啟住宿訂房頁 ↗</a></p></div>
-</article>
-
-<article class="day" data-city="西雅圖">
-<div class="day-head"><div class="date">2/5<br><small>星期五</small></div><div style="flex:1"><div class="day-title">火車南下・西雅圖除夕</div><div class="muted">Amtrak 504・年夜飯採買</div></div><span>⌄</span></div>
-<div class="day-body">
-<div class="notice"><strong>🚆 Amtrak Cascades 504</strong><div class="train"><div><strong>10:58 AM</strong><br><span class="muted">Vancouver, WA (VAN)</span></div><div>→</div><div><strong>2:05 PM</strong><br><span class="muted">Seattle King Street Station</span></div></div><div class="muted">2 月 5 日｜約 3 小時 7 分｜沿途 5 站。依你提供的車票資料。</div></div>
-<div class="notice"><strong>⚠️ 出發站重要提醒</strong><br>Vancouver, WA 是美國華盛頓州的溫哥華，不是加拿大的 Vancouver, BC。請先確認從加拿大住宿如何抵達美國的 VAN 車站，並確認車票出發站及跨境交通安排。</div>
-<ul><li>14:05 抵達西雅圖 King Street Station。</li><li>前往 Queen Anne 家庭住宿並放行李。</li><li>依商店營業時間決定是否當天採買；若太晚，改到 2/6。</li></ul>
-<strong>住宿：Seattle Quintessential Queen Anne Charmer</strong><p><a href="https://homes-and-villas.marriott.com/en/properties/40562504-seattle-quintessential-queen-anne-charmer-w-7beds-4baths" target="_blank" rel="noopener">Marriott Homes &amp; Villas 訂房頁 ↗</a></p>
-<p><a href="https://www.amtrak.com/" target="_blank" rel="noopener">Amtrak 官方網站 ↗</a></p>
+<div class="notice">
+<strong>🚕 早上前往溫哥華 Pacific Central Station</strong><br>
+從 6637 Ash Street 住宿出發，預計約 06:55 前抵達車站（依 08:25 發車、提前 1.5 小時安排）。<strong>接送方式尚未決定：</strong>之後再確認是否預約多人座接駁車，或安排計程車／叫車；考量 8 人及行李量，請預留足夠車輛與行李空間，不預設已預約接送。
 </div>
-</article>
 
-<article class="day" data-city="西雅圖">
-<div class="day-head"><div class="date">2/6<br><small>星期六</small></div><div style="flex:1"><div class="day-title">西雅圖家庭探索日</div><div class="muted">博物館・派克市場・水族館・海濱</div></div><span>⌄</span></div>
-<div class="day-body">
-<div class="notice">建議今天安排市區景點，昨天火車抵達後不必趕著購物。景點營業時間及入場時段請出發前再次確認。</div>
-<div class="timeline"><div class="time">10:00</div><div><strong>流行文化博物館 MoPOP</strong><br>參觀音樂、電影、科幻與遊戲主題展覽。<br><a href="https://www.mopop.org/" target="_blank" rel="noopener">官網與門票 ↗</a></div></div>
-<div class="timeline"><div class="time">12:45</div><div><strong>派克市場午餐</strong><br>享用海鮮、濃湯、烘焙點心，逛特色小店。<br><a href="https://www.pikeplacemarket.org/" target="_blank" rel="noopener">市場官網 ↗</a></div></div>
-<div class="timeline"><div class="time">14:00</div><div><strong>西雅圖水族館 Seattle Aquarium</strong><br>適合大人小孩的室內海洋生態行程。<br><a href="https://www.seattleaquarium.org/" target="_blank" rel="noopener">官網與門票 ↗</a></div></div>
-<div class="timeline"><div class="time">16:00</div><div><strong>海濱散步與 Seattle Great Wheel</strong><br>沿 Waterfront 欣賞海灣景色，視天氣搭乘摩天輪。<br><a href="https://seattlegreatwheel.com/" target="_blank" rel="noopener">摩天輪官網 ↗</a></div></div>
-<div class="timeline"><div class="time">17:30</div><div><strong>亞洲超市採買或回家休息</strong><br>若年夜飯食材尚未買齊，可前往 Uwajimaya；已採買完成就回住宿享受家庭時間。<br><a href="https://www.uwajimaya.com/" target="_blank" rel="noopener">Uwajimaya 官網 ↗</a></div></div>
-<div class="notice"><strong>彈性備案</strong><br>如果不想參觀博物館，可以改成西雅圖中心周邊散步，或把水族館與海濱安排成下午的主要活動。若需前往亞洲超市，建議先確認交通時間與當日營業時間。</div>
-<strong>住宿：Seattle Quintessential Queen Anne Charmer</strong><p><a href="https://homes-and-villas.marriott.com/en/properties/40562504-seattle-quintessential-queen-anne-charmer-w-7beds-4baths" target="_blank" rel="noopener">Marriott Homes &amp; Villas 訂房頁 ↗</a></p>
-</div>
-</article>
+<ul>
+<li><strong>11:40｜抵達西雅圖：</strong>Seattle King Street Station，領取行李後前往租車門市。</li>
+<li><strong>12:30｜取車：</strong>Seattle – 8th Avenue HLE（租車時間已調整為 12:30；請以租車確認單核對門市地址及營業時間）。</li>
+<li><strong>取車後前往住宿：</strong>1158 15th Avenue East, Seattle。民宿表示 12:00 後可協助寄放行李，請出發前再確認實際交接方式；若車內放不下全部行李，可安排 Uber 分批載運。切勿將行李留在車內無人看管。</li>
+<li><strong>下午／傍晚：</strong>前往 Costco 採買除夕夜食材及用品。</li>
+</ul>
 
-<article class="day" data-city="西雅圖">
-<div class="day-head"><div class="date">2/7<br><small>星期日</small></div><div style="flex:1"><div class="day-title">Outlet 最後採買</div><div class="muted">購物・整理行李</div></div><span>⌄</span></div>
-<div class="day-body"><ul><li>安排 Outlet 購物，地點與交通待決定。</li><li>整理戰利品、確認行李重量。</li><li>準備返台證件及機場交通。</li></ul><strong>住宿：Seattle Quintessential Queen Anne Charmer</strong><p><a href="https://homes-and-villas.marriott.com/en/properties/40562504-seattle-quintessential-queen-anne-charmer-w-7beds-4baths" target="_blank" rel="noopener">Marriott Homes &amp; Villas 訂房頁 ↗</a></p></div>
-</article>
+<div class="notice"><strong>住宿：Capitol Hill</strong><br>1158 15th Avenue East, Seattle, WA 98112<br><a href="https://homes-and-villas.marriott.com/en/properties/40562500-seattle-charming-urban-retreat-elegant-home-in-cap-hill?start_date=2027-02-05&amp;nights=3&amp;number_of_guests=10&amp;adults=10" target="_blank" rel="noopener">Marriott Homes &amp; Villas 訂房頁 ↗</a></div>
+<a href="https://www.amtrak.com/" target="_blank" rel="noopener">Amtrak 官方網站 ↗</a>
+</div></article>
 
-<article class="day" data-city="西雅圖">
-<div class="day-head"><div class="date">2/8<br><small>星期一</small></div><div style="flex:1"><div class="day-title">最後採買・搭機返台</div><div class="muted">超市零食・機場報到</div></div><span>⌄</span></div>
-<div class="day-body"><ul><li>白天市區最後採買、超市補貨。</li><li>確認行李重量、航廈與 Spot Saver 預約。</li><li>20:00 預計出發前往機場。</li><li>JX031｜23:45 SEA → TPE T2。</li><li>依提供的航班資訊，預計台灣時間 2/10 抵達。</li></ul><p class="muted">住宿：機上。</p><a href="https://www.starlux-airlines.com/" target="_blank" rel="noopener">STARLUX 官方網站 ↗</a></div>
-</article>
+<article class="day" data-city="西雅圖"><div class="day-head"><div class="date">2/6<br><small>星期六</small></div><div style="flex:1"><div class="day-title">Premium Outlets 購物日</div><div class="muted">Outlet 採買・家庭時間</div></div><span>⌄</span></div><div class="day-body"><ul><li>前往 Premium Outlets 購物。</li><li>依購物地點及當天交通狀況安排出發時間。</li><li>留意冬季天候、日落時間與回程路況。</li></ul><strong>住宿：Capitol Hill</strong><p><a href="https://homes-and-villas.marriott.com/en/properties/40562500-seattle-charming-urban-retreat-elegant-home-in-cap-hill?start_date=2027-02-05&amp;nights=3&amp;number_of_guests=10&amp;adults=10" target="_blank" rel="noopener">Marriott Homes &amp; Villas 訂房頁 ↗</a></p></div></article>
+
+<article class="day" data-city="西雅圖"><div class="day-head"><div class="date">2/7<br><small>星期日</small></div><div style="flex:1"><div class="day-title">自由活動・彈性備案</div><div class="muted">Leavenworth 德國小鎮／室內景點</div></div><span>⌄</span></div><div class="day-body"><ul><li><strong>首選：Leavenworth 德國小鎮</strong>，視天氣、道路及駕駛狀況決定是否前往。</li><li><strong>雨天／室內備案：</strong>華盛頓大學 University of Washington。</li><li><strong>雨天／室內備案：</strong>波音工廠 Future of Flight（須事先確認導覽是否開放、預約及交通）。</li><li>保留彈性，不建議同一天硬排所有備案。</li></ul><strong>住宿：Capitol Hill</strong><p><a href="https://homes-and-villas.marriott.com/en/properties/40562500-seattle-charming-urban-retreat-elegant-home-in-cap-hill?start_date=2027-02-05&amp;nights=3&amp;number_of_guests=10&amp;adults=10" target="_blank" rel="noopener">Marriott Homes &amp; Villas 訂房頁 ↗</a></p></div></article>
+
+<article class="day" data-city="西雅圖"><div class="day-head"><div class="date">2/8<br><small>星期一</small></div><div style="flex:1"><div class="day-title">市區最後採買・搭機返台</div><div class="muted">Bounce 寄物・還車・機場報到</div></div><span>⌄</span></div><div class="day-body"><ul>
+<li>退房後使用 Bounce 寄存行李，請先預約並確認營業時間、行李尺寸及取件時間。</li><li>開車前往市區租車門市提早還車，預計 14:30 前完成；以租車公司確認單為準。</li><li>若車內載不下所有人或行李，分批叫 Uber。</li><li>市區最後採買、超市購買零食。</li><li>19:00 出發前往 SEA 機場。</li><li>JX031｜23:45 SEA → TPE T2，預計台灣時間 2/10 04:55 抵達（+2 天）。</li><li>使用 Spot Saver 前，確認適用航廈、時段及預約規則。</li></ul>
+<div class="notice"><strong>行李寄存</strong><br><a href="https://bounce.com/" target="_blank" rel="noopener">Bounce 官方網站 ↗</a></div>
+<a href="https://www.starlux-airlines.com/" target="_blank" rel="noopener">STARLUX 官方網站 ↗</a><p class="muted">住宿：機上。</p></div></article>
 </main>
 
 <aside>
-<div class="panel">
-<h2>住宿快速連結</h2>
-<div class="linkrow"><strong>1/29-1/30｜西雅圖機場附近</strong><br>Holiday Inn Express &amp; Suites<br><a href="https://www.ihg.com/holidayinnexpress/" target="_blank" rel="noopener">IHG 官網 ↗</a></div>
+<div class="panel"><h2>住宿快速連結</h2>
+<div class="linkrow"><strong>1/29–1/30｜西雅圖機場附近</strong><br>Holiday Inn Express &amp; Suites Seattle-Sea-Tac Airport<br><a href="https://www.ihg.com/holidayinnexpress/" target="_blank" rel="noopener">IHG 官網 ↗</a></div>
 <div class="linkrow"><strong>1/31–2/2｜黃刀鎮</strong><br>The Explorer Hotel<br><a href="https://www.explorerhotel.ca/" target="_blank" rel="noopener">飯店官網 ↗</a></div>
-<div class="linkrow"><strong>2/3–2/4｜溫哥華</strong><br>Booking.com 分享住宿<br><a href="https://www.booking.com/Share-Pz8M1H" target="_blank" rel="noopener">開啟訂房頁 ↗</a></div>
-<div class="linkrow"><strong>2/5–2/7｜西雅圖 Queen Anne</strong><br>家庭住宿<br><a href="https://homes-and-villas.marriott.com/en/properties/40562504-seattle-quintessential-queen-anne-charmer-w-7beds-4baths" target="_blank" rel="noopener">Marriott Homes &amp; Villas ↗</a></div>
+<div class="linkrow"><strong>2/3–2/4｜溫哥華</strong><br>6637 Ash Street, Vancouver<br><a href="https://www.booking.com/Share-Pz8M1H" target="_blank" rel="noopener">Booking.com 訂房頁 ↗</a></div>
+<div class="linkrow"><strong>2/5–2/7｜西雅圖 Capitol Hill</strong><br>1158 15th Avenue East, Seattle<br><a href="https://homes-and-villas.marriott.com/en/properties/40562500-seattle-charming-urban-retreat-elegant-home-in-cap-hill?start_date=2027-02-05&amp;nights=3&amp;number_of_guests=10&amp;adults=10" target="_blank" rel="noopener">Marriott Homes &amp; Villas ↗</a></div>
 </div>
 
-<div class="panel">
-<h2>重要交通連結</h2>
+<div class="panel"><h2>重要交通與旅遊連結</h2>
 <div class="linkrow"><strong>Amtrak Cascades</strong><br><a href="https://www.amtrak.com/" target="_blank" rel="noopener">班次與訂票 ↗</a></div>
 <div class="linkrow"><strong>Mobile Passport Control</strong><br><a href="https://www.cbp.gov/travel/us-citizens/mobile-passport-control" target="_blank" rel="noopener">美國海關官方資訊 ↗</a></div>
 <div class="linkrow"><strong>STARLUX Airlines</strong><br><a href="https://www.starlux-airlines.com/" target="_blank" rel="noopener">航班與報到資訊 ↗</a></div>
+<div class="linkrow"><strong>Bounce 行李寄存</strong><br><a href="https://bounce.com/" target="_blank" rel="noopener">寄物預約 ↗</a></div>
+<div class="linkrow"><strong>Washington Good To Go! 訪客過路費</strong><br><a href="https://www.mygoodtogo.com/EN/learn/how-to-pay/visitors" target="_blank" rel="noopener">訪客繳費說明 ↗</a></div>
+<div class="linkrow"><strong>黃刀鎮冬季衣物參考</strong><br><a href="https://kimiyo.tw/yellowknife-baggage/" target="_blank" rel="noopener">行李與保暖衣物整理 ↗</a></div>
 </div>
 
-<div class="panel">
-<h2>出發前待辦清單</h2>
-<div class="muted">勾選項目以追蹤準備進度</div>
-<div id="progressText" style="font-weight:700;margin-top:12px">0 / 8 已完成</div>
-<div class="progress"><div id="progressBar"></div></div>
-<div id="checks">
-<label class="checkrow"><input type="checkbox">確認護照及美加入境文件</label>
-<label class="checkrow"><input type="checkbox">確認黃刀鎮至溫哥華航班</label>
-<label class="checkrow"><input type="checkbox">核對 504 次列車出發站與票券</label>
-<label class="checkrow"><input type="checkbox">確認住宿地址及入住時間</label>
-<label class="checkrow"><input type="checkbox">預訂狗拉雪橇與極光團</label>
-<label class="checkrow"><input type="checkbox">安排 Outlet 交通及購物時間</label>
-<label class="checkrow"><input type="checkbox">準備除夕食材採買清單</label>
-<label class="checkrow"><input type="checkbox">確認 Spot Saver 與行李限制</label>
-</div>
-</div>
-<div class="panel">
-<h2>旅程提醒</h2>
-<p class="muted">本網站為家庭旅遊行程草案。航班、火車時刻、景點營業時間、交通與訂房狀態，請以官方網站及實際確認信為準。</p>
-</div>
-</aside>
+<div class="panel"><h2>租車與自駕提醒</h2>
+<ul class="muted" style="padding-left:19px"><li>攜帶租車付款信用卡，持卡人須符合租車公司對主駕駛人的規定。</li><li>攜帶國際駕照及台灣駕照正本。</li><li>出發前確認租車保險、額外駕駛人、押金及還車油量規定。</li><li>註冊／了解 Washington Good To Go! 訪客過路費繳費方式。</li><li>Costco 加油站可列為比價選項，先確認會員及支付方式。</li><li>導航可設定避開收費道路，但需留意繞路時間與冬季路況。</li></ul>
 </div>
 
-<footer>
-<div style="font-size:25px">✦</div>
-<strong>一起出發，留下冬日回憶。</strong>
-<div class="muted" style="margin-top:8px">SEATTLE · YELLOWKNIFE · VANCOUVER</div>
-</footer>
+<div class="panel"><h2>天氣與治安提醒</h2>
+<ul class="muted" style="padding-left:19px"><li>西雅圖與溫哥華冬季常有降雨，準備防水外套、防水鞋及備用襪。</li><li>冬季日照時間短，行程盡量安排白天完成；天黑後避免在不熟悉或人煙稀少的區域逗留。</li><li>車內不要留下任何物品，包含行李、背包、購物袋及外套；停車後保持車廂可見處淨空。</li><li>下車後確認車門上鎖，不在車旁整理行李或展示貴重物品。</li><li>前往 Leavenworth 或山區前，查看道路、降雪、結冰及車輛雪地裝備資訊。</li></ul>
+<p class="muted">冬季日落時間會隨日期與地點改變；「約 16 點日落」可作保守規劃參考，實際請查當地日落時間。</p>
+</div>
+
+<div class="panel"><h2>出發前待辦清單</h2><div class="muted">勾選項目以追蹤準備進度</div><div id="progressText" style="font-weight:700;margin-top:12px">0 / 13 已完成</div><div class="progress"><div id="progressBar"></div></div><div id="checks">
+<label class="checkrow"><input type="checkbox">確認護照、加拿大及美國入境文件</label>
+<label class="checkrow"><input type="checkbox">下載 Mobile Passport Control，確認資格</label>
+<label class="checkrow"><input type="checkbox">確認 AC8801、AC8024 與 AC253C 航班及行李直掛</label>
+<label class="checkrow"><input type="checkbox">確認狗拉雪橇與三晚極光團接送時間</label>
+<label class="checkrow"><input type="checkbox">確認溫哥華住宿可否提前寄放行李</label>
+<label class="checkrow"><input type="checkbox">決定 2/5 早上前往 Pacific Central Station 的接送方式（預約接駁車／計程車）</label>
+<label class="checkrow"><input type="checkbox">確認 Amtrak Cascades 517 車票、提前 1.5 小時抵達及行李托運規定</label>
+<label class="checkrow"><input type="checkbox">確認 Seattle 8th Avenue HLE 12:30 取車及 2/8 還車資訊</label>
+<label class="checkrow"><input type="checkbox">準備租車信用卡、國際駕照及台灣駕照</label>
+<label class="checkrow"><input type="checkbox">了解 Good To Go! 訪客過路費與租車收費方式</label>
+<label class="checkrow"><input type="checkbox">確認 Bounce 行李寄存預約與營業時間</label>
+<label class="checkrow"><input type="checkbox">安排 Costco 除夕採買及 Outlet 交通</label>
+<label class="checkrow"><input type="checkbox">確認 Spot Saver、航班報到與行李限制</label>
+</div></div>
+
+<div class="panel"><h2>重要待確認事項</h2>
+<div class="notice"><strong>1｜2/5 早上前往 Pacific Central Station 的接送</strong><br>目前已更新為加拿大 Vancouver, BC 的 Pacific Central Station（VAC）出發，搭乘 Amtrak Cascades 517，08:25 出發、11:40 抵達 Seattle King Street Station。預計提前 1.5 小時抵達並托運行李；早上從 6637 Ash Street 前往車站的交通方式尚未決定，之後再確認是否預約多人座接駁車或計程車。請以實際車票確認班次、時刻與托運規定。</div>
+<div class="notice"><strong>2｜2/3 溫哥華住宿寄放行李</strong><br>先向房東確認清晨抵達後能否寄放行李，以及最早可寄放時間。</div>
+<div class="notice"><strong>3｜2/5 取車與 2/8 還車</strong><br>2/5 Seattle – 8th Avenue HLE 取車時間已調整為 12:30；仍須確認門市完整地址、營業時間、車型及行李容量，並確認 2/8 還車安排。</div>
+<div class="notice"><strong>4｜行程與景點預約</strong><br>狗拉雪橇、極光團、波音工廠導覽、餐廳及 Outlet 營業時間，請以業者最新公告為準。</div>
+</div>
+
+<div class="panel"><h2>旅程提醒</h2><p class="muted">本網站為家庭旅遊行程整理。航班、火車時刻、景點營業時間、交通、租車與訂房狀態，請以官方網站及實際確認信為準。此頁未自動儲存勾選狀態，重新整理後勾選可能會重置。</p></div>
+</aside></div>
+<footer><div style="font-size:25px">✦</div><strong>一起出發，留下冬日回憶。</strong><div class="muted" style="margin-top:8px">SEATTLE · YELLOWKNIFE · VANCOUVER</div></footer>
 </div>
 <script>
-document.querySelectorAll('.day-head').forEach(head=>{
-  head.addEventListener('click',()=>{
-    const body=head.nextElementSibling;
-    body.hidden=!body.hidden;
-    head.querySelector('span').textContent=body.hidden?'＋':'⌄';
-  });
-});
-document.querySelectorAll('[data-filter]').forEach(button=>{
-  button.addEventListener('click',()=>{
-    document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b===button));
-    document.querySelectorAll('.day').forEach(day=>{
-      day.style.display=button.dataset.filter==='all'||day.dataset.city===button.dataset.filter?'':'none';
-    });
-  });
-});
-const boxes=[...document.querySelectorAll('#checks input')];
-function updateProgress(){
-  const done=boxes.filter(b=>b.checked).length;
-  document.getElementById('progressText').textContent=`${done} / ${boxes.length} 已完成`;
-  document.getElementById('progressBar').style.width=`${done/boxes.length*100}%`;
-}
-boxes.forEach(box=>box.addEventListener('change',updateProgress));
-updateProgress();
-</script>
-</body>
-</html>
+document.querySelectorAll('.day-head').forEach(head=>{head.addEventListener('click',()=>{const body=head.nextElementSibling;body.hidden=!body.hidden;head.querySelector('span').textContent=body.hidden?'＋':'⌄';});});
+document.querySelectorAll('[data-filter]').forEach(button=>{button.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b===button));document.querySelectorAll('.day').forEach(day=>{day.style.display=button.dataset.filter==='all'||day.dataset.city===button.dataset.filter?'':'none';});});});
+const boxes=[...document.querySelectorAll('#checks input')];function updateProgress(){const done=boxes.filter(b=>b.checked).length;document.getElementById('progressText').textContent=`${done} / ${boxes.length} 已完成`;document.getElementById('progressBar').style.width=`${done/boxes.length*100}%`;}boxes.forEach(box=>box.addEventListener('change',updateProgress));updateProgress();
+</script></body></html>
